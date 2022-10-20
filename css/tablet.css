@@ -1,0 +1,58 @@
+@media only screen and (max-width: 890px) {
+    header {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header nav {
+        display: none;
+    }
+
+    .sectionright {
+        display: none;
+    }
+
+    .logo {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .mobilenav {
+        display: block;
+    }
+
+    .mobilenav nav {
+        display: grid;
+        grid-template: 5rem / repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+        margin-right: 1rem;
+        text-align: center;
+    }
+
+    .mobilenav .home {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .mobilenav .about {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    .mobilenav .local {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+
+    .mobilenav .sign {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+
+    .banner {
+        margin-top: 2rem;
+    }
+}

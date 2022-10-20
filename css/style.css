@@ -1,0 +1,174 @@
+@import url("tablet.css");
+@import url("mobile.css");
+
+/* global */
+
+html {
+    font-size: 16px;
+    font-family: "Permanent Marker";
+}
+
+ nav a {
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: darkorange;
+    box-shadow: 2px 2px 2px green;
+}
+
+nav a:hover {
+    background-color: green;
+    box-shadow: 2px 2px 2px darkorange;
+    border: 2px solid green;
+}
+
+nav a:active {
+    border: 2px 2px 2px darkorange;
+    box-shadow: none;
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: Ubuntu;
+}
+
+/* header */
+
+header {
+    height: 7rem;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    top: 0;
+}
+
+.logo {
+    height: 4rem;
+    width: 15rem;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-left: 2rem;
+}
+
+header nav {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-self:right;
+    margin-right: 2rem;
+}
+
+.mobilenav {
+    display: none;
+}
+
+/* banner */
+
+.banner {
+    background-image: url("../media/images/mbBanner.jpg");
+    margin-top: 7rem;
+    height: auto;
+    width: 100%;
+    padding: 20rem 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner h1 {
+    color: darkorange;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px white;
+}
+
+/* main content */
+
+.maincontent {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(5, 1fr);
+    justify-items: center;
+    gap: 10px;
+    text-align: center;
+    
+}
+
+.sectionmain {
+    grid-row: 1 / span 4;
+    grid-column: 2 / span 3;
+}
+
+.sectionmain img {
+    height: auto;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px darkorange;
+}
+
+/* left column */
+
+.sectionleft {
+    grid-row: 1 / span 4;
+    grid-column: 1 / 2;
+    font-family: Ubuntu;
+}
+
+
+.sectionleft ul {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.sectionleft ul li {
+    margin: 1rem;
+}
+
+/* right column */
+
+.sectionright {
+    grid-row: 1 / span 4;
+    grid-column: 5 / 6;
+    font-family: Ubuntu;
+}
+
+.sectionright h2 {
+    margin-left: 3rem;
+}
+
+.sectionright ul {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.sectionright ul li {
+    margin: 1rem;
+}
+
+.imgcontainer2 {
+    height: auto;
+    width: 100%;
+}
+
+.imgcontainer2 img {
+    height: auto;
+    width: 100%;
+}
+/* footer */
+
+footer {
+    text-align: center;
+}

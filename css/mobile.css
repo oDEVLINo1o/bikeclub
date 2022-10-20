@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+    .mobilenav nav {
+        height: 15rem;
+        display: grid;
+        grid-template: repeat(4, 1fr) / 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mobilenav .home {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .mobilenav .about {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .mobilenav .local {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .mobilenav .sign {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+
+    .sectionmain {
+        width: 100%;
+        gap: 0;
+    }
+
+    .sectionleft {
+        display: none;
+    }
+
+    .banner {
+        margin-top: 4rem;
+    }
+}
