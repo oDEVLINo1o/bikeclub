@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 350px) {
     .mobilenav nav {
         height: 15rem;
         display: grid;

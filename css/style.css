@@ -53,6 +53,7 @@ header {
     position: fixed;
     background-color: white;
     top: 0;
+    z-index: 10;
 }
 
 .logo {
@@ -86,12 +87,15 @@ header nav {
     text-align: center;
     background-size: cover;
     background-position: bottom;
+    z-index: 0;
 }
+
 
 .banner h1 {
     color: darkorange;
     font-size: 3rem;
     text-shadow: 2px 2px 2px white;
+    z-index: 3;
 }
 
 /* main content */
